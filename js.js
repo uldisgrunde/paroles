@@ -19,7 +19,7 @@ function gen(){
         <td>`;
             for (let i=0; i<vcount;i++){//vārdu daudzums
                 let kur=Math.floor(Math.random()*vcount);
-                if (i==kur){
+                if (word!="" && i==kur){
                     text+=word;
                 }else{
                     text+=vardi[Math.floor(Math.random()*vardi.length)];
@@ -34,7 +34,8 @@ function gen(){
             text=text.replace(/a/gi, "@");
             text=text.replace(/s/gi, "$");
             text=text.replace(/o/gi, "0");
-            text=text.replace(/i/gi, "1");
+            text=text.replace(/l/gi, "1");
+			text=text.replace(/i/gi, "|");
         }
         dati.innerHTML=text;
         }
