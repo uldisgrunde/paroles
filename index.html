@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Paroles ģenerators</title>
+        <link href="style.css" rel="stylesheet" />
+
+    </head>
+	<body>
+		<div class="wrap">
+            <div class="header">
+                <h3>Smieklīgo paroļu generators</h3>
+            </div>
+            <div class="content">
+                <br>
+                <div class="flex">
+					<div class="col">
+                        Cik ciparus parolē vēlaties:
+                        <input type="number" id="ncount" value="1" min="1" max="5"><br>
+                        Cik vārdus parolei vēlaties:
+                        <input type="number" id="vcount" value="2" min="1" max="5"><br>
+                        Cik variantus parolei vēlaties:
+                    <input type="number" id="variant" value="1" min="1" max="10"><br>
+                    Parolē iekļautais vārds:
+                        <input type="text" id="word" ><br>
+                        <input type="button" value="Ģenerēt" onclick="gen()">
+                    <br>
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nr.</th>
+                            <th>Parole</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dati"> 
+                    </tbody>
+                </table>
+
+            </div> 
+        </div><!-- beidzas flex -->
+
+            </div><!-- beidzas content -->    
+        </div>
+
+    </body>
+    <script src="js.js"></script>
+</html>
