@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: grey;
     font-size: 14px;
@@ -14,22 +18,35 @@ body {
 
 .header h3 {
     display: inline-block;
+	text-align: center;
 }
+
 
 .flex {
     display: flex;
     gap: 10px;
-}
 
-.cols {
+ }
+.content{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col {
     position: relative;
-    width: 33%;
     padding-right: 15px;
     padding-left: 15px;
 }
- input[type=number]{
+
+div{
+text-align: center;
+}
+
+
+input[type=number]{
     width:30px;
  }
+
  input[type=text]{
     width:100px;
  }
